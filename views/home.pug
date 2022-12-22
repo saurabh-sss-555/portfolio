@@ -1,0 +1,68 @@
+
+extends base.pug
+block title 
+    title Saurabh Salunke
+block style 
+    style 
+        include ../static/style.css
+
+block content
+    
+        section#intro 
+            div.info 
+                p Hi, I am
+                p Saurabh Salunke.
+                p I'm Web Developer and App Developer.
+                div.but 
+                        span#download 
+                            a(href="/download") Download CV 
+                        span#contact 
+                            a(href="/contact") Contact
+            div.prof 
+                img(src="../static/mypic.png", alt="#")
+        section.about
+            h2.title About
+            div.about_box
+                div#prof2
+                    img(src="../static/20221014_111050.png", alt="#")
+                div#about
+                    p.normalText Hi there! My name is Saurabh Salunke and I’m Web Developer and App Developer. I have always been passionate about development. Currently I’m working on my DSA and Problem solving skills.
+                    p.normalText I am always looking for new challenges and opportunities to grow and learn as a Software Engineer. I hope you enjoy looking through my portfolio and getting to know more about my work. 
+                    p.normalText Thank you, for visiting my website !
+                    .container
+                        .row
+                            .col-md-12
+                                .card
+                                    .card-body
+                                        h3.card-title My eduaction:
+                                            #content
+                                                ul.timeline
+                                                    li.event(data-date='2022-2025')
+                                                        h3 B-Tech in Information Technology.
+                                                        p.normalText Walchand College of Engineering,Sangli.
+                                                    li.event(data-date='2019-2022')
+                                                        h3 Diploma in Computer Engineering
+                                                        p.normalText
+                                                        |SVERI's College of Engineering, Pandharpur.
+                                                    li.event(data-date='2018-19')
+                                                        h3 SSC
+                                                        p.normalText
+                                                        | Shree Ganesh Vidyalay,Pimpalner(Solapur).
+                                                    //- li.event(data-date='8:30 - 9:30pm')
+                                                    //-     h3 Closing Ceremony
+                                                    //-     p
+                                                    //-     | See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.
+        //- section#sponcer
+        //-     h2.title Our Sponcers
+        //-     div.holder
+        //-         div.img1 
+        //-             img(src="../static/mail.png", alt="#") 
+        //-         div.img1 
+        //-             img(src="../static/fb.png", alt="#") 
+        //-         div.img1 
+        //-             img(src="../static/insta.png", alt="#") 
+        //-         div.img1 
+        //-             img(src="../static/twit.png", alt="#") 
+        //-         div.img1 
+        //-             img(src="../static/pinrest.png", alt="#") 
+            
