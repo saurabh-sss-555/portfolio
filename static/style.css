@@ -7,7 +7,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'IBM Plex Serif', serif;
-   
 }
 .normalText{
     font-size: 17px;
@@ -67,12 +66,10 @@
     padding-top: 50px;
     height:  80vh;
     flex-direction: row;
-    /* font-size: 1rem; */
-    /* font-weight: bold; */
-    /* background-color: yellow; */
     background: url('../static/bg.png') no-repeat center center/cover;
-    /* opacity: 0.8; */
+    
 }
+
 .info{
     display: flex;
     flex-direction: column;
@@ -104,7 +101,7 @@
 #download,#contact
 {
     background-color: rgb(243, 235, 235);
-    box-shadow: inset -10px -10px 10px tomato, inset 10px 10px 10px tomato;
+    box-shadow: inset -5px -5px 10px tomato, inset 5px 5px 10px tomato;
     margin-top: 25px;
     margin-left: 100px;
     padding: 5px 10px;
@@ -114,8 +111,6 @@
 }
 #download:hover,#contact:hover
 {
-    background-color: rgb(243, 235, 235);
-    box-shadow: inset -10px -10px 10px tomato, inset 10px 10px 10px tomato;
     opacity: 0.6;
 }
 .prof img{
@@ -136,77 +131,26 @@
     flex-direction: row;
     margin-top: 20px;
     justify-content: center;
-    /* align-items: center; */
     padding-left: 70px;
+    
 }
 #prof2 img{
     height: 40vh;
     border-radius: 25px;
-    
+    filter: brightness(0.6);
+}
+#prof2 img:hover{
+    box-shadow: 5px 5px 10px tomato;
+    filter: brightness(0.8);
 }
 #about{
     margin:0em 3em;
 }
 .about{
-    margin-top: 20px;
+    padding: 2em 0em;
+    background-color: rgb(37, 37, 37);
+    color: rgb(169, 165, 165);
 }
-/* .card{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    background-color: rgb(201, 249, 233);
-    padding: 20px;
-    margin-top: 7px;
-}
-.box{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 2px solid black;
-    border-radius: 15px;
-    margin: 10px;
-    background-color: beige;
-    height: 12em;
-    text-align: center;
-}
-.box h4{
-    
-    margin-top: 5px;
-}
-.box p{
-    margin-top: 20px;
-}
-#sponcer h2{
-    margin-top: 30px;
-}
-.holder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(240, 211, 216);
-    padding: 20px;
-    margin-top: 7px;
-    height: 10em;
-}
-.img1{
-    width: 10%;
-}
-.img1 img{
-    width: 33%;
-    filter: invert(0.1);
-}
-#footer{
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    display: flex;
-    background-color: black;
-    color: white;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    margin-top: -50px;
-} */
 .timeline {
     border-left: 3px solid tomato;
     border-bottom-right-radius: 4px;
@@ -214,9 +158,6 @@
     background: rgba(114, 124, 245, 0.09);
     margin: 0 auto;
     letter-spacing: 0.2px;
-    /* position: relative; */
-    line-height: 1.4em;
-    /* font-size: 1.03em; */
     padding: 50px;
     list-style: none;
     text-align: left;
@@ -230,15 +171,13 @@
     }
 }
 
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1em;
+.timeline p {
+    font-weight: 200;
+    font-size: 0.8em;
 }
-
-.timeline h2,
 .timeline h3 {
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 10px;
 }
 
@@ -272,7 +211,6 @@
     left: -207px;
     content: attr(data-date);
     text-align: right;
-    /* font-weight: 100; */
     font-size: 0.8em; 
     min-width: 120px;
 }
@@ -323,6 +261,38 @@
 }
 .container{
     margin-top: 20px;
+}
+
+/* Skills section */
+.my-skills{
+    padding: 2em 0em;
+    background-color: rgb(37, 37, 37);
+    color: white;  
+    height: 60vh; 
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+}
+.img-logo{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70vw;
+    align-items: center;
+    margin-top: 2em;
+    color: white;
+}
+
+.img-logo img:hover{
+    filter: grayscale(0%);
+}
+.img-logo img{
+    filter: grayscale(80%);
+    width: 6rem;
 }
   
  

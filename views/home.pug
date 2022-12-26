@@ -5,6 +5,8 @@ block title
 block style 
     style 
         include ../static/style.css
+    script 
+        include ../static/index.js
 
 block content
     
@@ -39,30 +41,51 @@ block content
                                                 ul.timeline
                                                     li.event(data-date='2022-2025')
                                                         h3 B-Tech in Information Technology.
-                                                        p.normalText Walchand College of Engineering,Sangli.
+                                                        p Walchand College of Engineering,Sangli.
                                                     li.event(data-date='2019-2022')
                                                         h3 Diploma in Computer Engineering
-                                                        p.normalText
-                                                        |SVERI's College of Engineering, Pandharpur.
+                                                        p SVERI's College of Engineering, Pandharpur.
                                                     li.event(data-date='2018-19')
                                                         h3 SSC
-                                                        p.normalText
-                                                        | Shree Ganesh Vidyalay,Pimpalner(Solapur).
+                                                        p Shree Ganesh Vidyalay,Pimpalner(Solapur).
                                                     //- li.event(data-date='8:30 - 9:30pm')
                                                     //-     h3 Closing Ceremony
                                                     //-     p
                                                     //-     | See how is the victor and who are the losers. The big stage is where the winners bask in their own glory.
-        //- section#sponcer
-        //-     h2.title Our Sponcers
-        //-     div.holder
-        //-         div.img1 
-        //-             img(src="../static/mail.png", alt="#") 
-        //-         div.img1 
-        //-             img(src="../static/fb.png", alt="#") 
-        //-         div.img1 
-        //-             img(src="../static/insta.png", alt="#") 
-        //-         div.img1 
-        //-             img(src="../static/twit.png", alt="#") 
-        //-         div.img1 
-        //-             img(src="../static/pinrest.png", alt="#") 
-            
+        section.my-skills
+            h2.title Skills 
+            div.sills
+                div.img-logo
+                    div#c 
+                        img(src="../static/c.png", alt="#",onmouseover="print1(this)")
+                        div#c1
+                    div#cpp
+                        img(src="../static/cpp.png", alt="#",onmouseover="print1(this)")
+                        div#cpp1
+                    div#java 
+                        img(src="../static/java.png", alt="#",onmouseover="print1(this)")
+                        div#java1
+                    div#python 
+                        img(src="../static/python.png", alt="#",onmouseover="print1(this)")
+                        div#python1
+                    div#html 
+                        img(src="../static/html.png", alt="#",onmouseover="print1(this)")
+                        div#html1
+                div.img-logo
+                    div#css 
+                        img(src="../static/css.png", alt="#",onmouseover="print1(this)")
+                        div#css1
+                    div#js
+                        img(src="../static/js.png", alt="#",onmouseover="print1(this)")
+                        div#js1
+                    div#mongo
+                        img(src="../static/mongodb.png", alt="#",onmouseover="print1(this)")
+                        div#mongo1
+                    div#node 
+                        img(src="../static/node.png", alt="#",onmouseover="print1(this)")
+                        div#node1
+                    div#figma
+                        img(src="../static/figma.png", alt="#",onmouseover="print1(this)")
+                        div#figma1
+
+                
